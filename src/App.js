@@ -1,8 +1,7 @@
-import Button from '~/components/Button/index';
 function App() {
     return (
         <div className="App">
-            <Button />
+            <h1>Tiktok</h1>
         </div>
     );
 }
