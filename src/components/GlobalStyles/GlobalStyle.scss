@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600;700&display=swap');
 @import 'normalize.css';
 
-$primary: rgb(255 59 92);
+:root {
+    --width-content: 1150px;
+    --primary: rgba(254, 44, 85, 1);
+}
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 html {
     font-size: 62.5%;
