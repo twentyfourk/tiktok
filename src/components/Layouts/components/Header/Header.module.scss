@@ -9,6 +9,7 @@
 .inner {
     height: 60px;
     width: var(--width-content);
+    padding: 0 var(--default-layout-horizontal-spacer);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,63 +18,45 @@
 .logo {
 }
 
-.search {
+//Actions
+.actions {
     display: flex;
-    position: relative;
-    width: 361px;
-    height: 46px;
-    padding-left: 16px;
-    background-color: rgba(22, 24, 35, 0.06);
-    border-radius: 92px;
-    border: 1.5px solid transparent;
-    input {
-        flex: 1;
-        height: 100%;
-        font-size: 1.6rem;
-        background-color: transparent;
-        caret-color: var(--primary);
-    }
-    input:not(:placeholder-shown) ~ .search-btn {
-        color: rgba(22, 24, 35, 0.75);
-    }
-    &:focus-within {
-        border-color: rgba(22, 24, 35, 0.2);
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        width: 1px;
-        height: 28px;
-        right: 52px;
-        top: 9px;
-        background-color: rgba(22, 24, 35, 0.12);
-    }
+    align-items: center;
 }
 
-.loading,
-.clear {
-    position: absolute;
-    right: 68px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: rgba(22, 24, 35, 0.4);
+.plus-icon {
+    margin-right: 6px;
 }
 
-.search-btn {
-    width: 52px;
-    height: 100%;
+.menu-btn {
+    margin-left: 16px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 0 4px;
     background-color: transparent;
-    font-size: 1.8rem;
-    border-top-right-radius: 92px;
-    border-bottom-right-radius: 92px;
-    color: rgba(22, 24, 35, 0.4);
-    &:hover {
-        cursor: pointer;
-        background-color: rgba(22, 24, 35, 0.1);
+    .menu-icon {
+        width: 20px;
+        height: 20px;
     }
-    &:active {
-        background-color: (22, 24, 35, 0.16);
-    }
+}
+
+.user-action {
+    width: 26px;
+    height: 26px;
+    padding: 3px 3px 0 3px;
+    margin-left: 16px;
+    font-size: 1.9rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 3.2rem;
+    height: 3.2rem;
+    object-fit: cover;
+    margin-left: 2.4rem;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 button,
